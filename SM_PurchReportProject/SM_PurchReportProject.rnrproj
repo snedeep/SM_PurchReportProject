@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <BuildTasksDirectory Condition=" '$(BuildTasksDirectory)' == ''">$(MSBuildProgramFiles32)\MSBuild\Microsoft\Dynamics\AX</BuildTasksDirectory>
+    <Model>SM_PurchreportModel</Model>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <OutputPath>bin</OutputPath>
+    <SchemaVersion>2.0</SchemaVersion>
+    <GenerateCrossReferences>True</GenerateCrossReferences>
+    <RunAppCheckerRules>False</RunAppCheckerRules>
+    <LogAppcheckerDiagsAsErrors>False</LogAppcheckerDiagsAsErrors>
+    <DeployOnline>False</DeployOnline>
+    <ProjectGuid>{723910c1-f4ad-44af-a10d-4bdd4464933f}</ProjectGuid>
+    <Name>SM_PurchReportProject</Name>
+    <RootNamespace>SM_PurchReportProject</RootNamespace>
+    <StartupType>Class</StartupType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <Configuration>Debug</Configuration>
+    <DBSyncInBuild>True</DBSyncInBuild>
+    <GenerateFormAdaptors>False</GenerateFormAdaptors>
+    <Company>
+    </Company>
+    <Partition>initial</Partition>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DataEntityExpandParentChildRelations>False</DataEntityExpandParentChildRelations>
+    <DataEntityUseLabelTextAsFieldName>False</DataEntityUseLabelTextAsFieldName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Menu Extensions\" />
+    <Folder Include="Output Menu Items\" />
+    <Folder Include="Reports\" />
+    <Folder Include="Simple Queries\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AxMenuExtension\AccountsReceivable.SM_PurchreportModel">
+      <SubType>Content</SubType>
+      <Name>AccountsReceivable.SM_PurchreportModel</Name>
+      <Link>Menu Extensions\AccountsReceivable.SM_PurchreportModel</Link>
+    </Content>
+    <Content Include="AxMenuItemOutput\SM_PurchOutputMenuItem">
+      <SubType>Content</SubType>
+      <Name>SM_PurchOutputMenuItem</Name>
+      <Link>Output Menu Items\SM_PurchOutputMenuItem</Link>
+    </Content>
+    <Content Include="AxQuery\SM_PurchQuery">
+      <SubType>Content</SubType>
+      <Name>SM_PurchQuery</Name>
+      <Link>Simple Queries\SM_PurchQuery</Link>
+    </Content>
+    <Content Include="AxReport\SM_PurchReport">
+      <SubType>Content</SubType>
+      <Name>SM_PurchReport</Name>
+      <Link>Reports\SM_PurchReport</Link>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
+  <Import Project="$(BuildTasksDirectory)\Microsoft.Dynamics.Framework.Tools.BuildTasks.targets" />
+</Project>

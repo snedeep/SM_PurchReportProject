@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33529.622
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FC65038C-1B2F-41E1-A629-BED71D161FFF}") = "SM_PurchReportProject (USR) [SM_PurchreportModel]", "SM_PurchReportProject\SM_PurchReportProject.rnrproj", "{723910C1-F4AD-44AF-A10D-4BDD4464933F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{723910C1-F4AD-44AF-A10D-4BDD4464933F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{723910C1-F4AD-44AF-A10D-4BDD4464933F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {86751780-00B2-4982-92AE-69B5A7D8A766}
+	EndGlobalSection
+EndGlobal
